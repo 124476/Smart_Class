@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Умный класс{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+  <div class="card border-danger">
+    <div class="card-header bg-danger text-white">
+      <h2 class="mb-0">Удалить класс?</h2>
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+        Вы уверены, что хотите удалить класс <strong>"{{ object.name }}"</strong>? Это действие необратимо.
+      </p>
+      <form method="post" class="d-inline">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Удалить</button>
+      </form>
+      <a href="{% url 'class_work:list' %}" class="btn btn-secondary">Отмена</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

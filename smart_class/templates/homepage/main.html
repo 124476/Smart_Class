@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load active_link_tags %}
+
+{% block title %}Умный класс{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+  <div class="row text-center mb-4">
+    <div class="col">
+      <h1 class="display-4">Добро пожаловать в "Умный класс"</h1>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col text-center">
+      <a href="{% url 'class_work:list' %}" class="btn btn-primary btn-lg">
+        <i class="bi bi-clipboard-plus"></i>Начало работы
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

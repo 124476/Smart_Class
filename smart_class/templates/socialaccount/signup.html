@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load allauth %}
+
+{% block head_title %}
+  {% trans "Signup with Yandex" %}
+{% endblock head_title %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h1 class="text-center text-primary">
+            <i class="bi bi-person-check"></i>
+            {% trans "Sign Up" %}
+          </h1>
+          <p class="text-center text-muted">
+            {% blocktrans with provider_name=account.get_provider.name site_name=site.name %}
+              You are about to use your {{ provider_name }} account to login to {{ site_name }}.
+              As a final step, please complete the following form:
+            {% endblocktrans %}
+          </p>
+          {% url 'socialaccount_signup' as action_url %}
+          <form method="post" action="{{ action_url }}" class="mt-4">
+            {% csrf_token %}
+            <div class="mb-3">
+              {% element fields form=form unlabeled=True %} {% endelement %}
+            </div>
+            {{ redirect_field }}
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success">
+                <i class="bi bi-person-plus-fill"></i>
+                {% trans "Sign Up" %}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

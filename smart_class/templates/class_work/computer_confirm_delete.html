@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Умный класс{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title text-danger">Удалить компьютер?</h2>
+      <p class="card-text">
+        Вы уверены, что хотите удалить компьютер <strong>"{{ object.name }}"</strong>?
+      </p>
+      <form method="post" class="d-inline">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Удалить</button>
+      </form>
+      <a href="{% url 'class_work:list' %}" class="btn btn-secondary">Отмена</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

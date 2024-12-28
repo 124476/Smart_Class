@@ -1,0 +1,53 @@
+{% load static %}
+{% load active_link_tags %}
+
+<header>
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <a href="/" class="logo d-flex align-items-center">
+      <img src="{% static 'img/logo.svg' %}" alt="Logo" height="60">
+      <span class="ms-2 fw-bold">Умный класс</span>
+    </a>
+    <nav class="d-flex">
+      <nav class="my-auto nav-item dropdown">
+        <button class="btn border-0 dropdown-toggle d-flex align-items-center" id="theme-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i id="theme-icon-active" class="bi bi-sun-fill"></i>
+          <span>Темная</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button class="dropdown-item" data-bs-theme-value="light">Светлая</button>
+          </li>
+          <li>
+            <button class="dropdown-item" data-bs-theme-value="dark">Темная</button>
+          </li>
+        </ul>
+      </nav>
+      {% if request.resolver_match.view_name != 'users:login' %}
+        {% if request.user.is_authenticated %}
+          <div class="dropdown ms-2">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="{% if request.user.has_avatar %}{{ request.user.get_small_avatar }}{% else %}{% static 'img/default_user_avatar.jpg' %}{% endif %}" alt="{{ request.user.username }}" class="rounded-circle" width="48" height="48">
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" {% if view_name != "users:profile" %}href="{% url 'users:profile' %}"{% endif %}>Мой профиль</a></li>
+              <li><hr class="dropdown-divider"></li>
+              {% if request.user.is_staff %}
+                <li><a href="{% url 'admin:index' %}" class="dropdown-item">
+                  Админ
+                </a></li>
+              {% endif %}
+              <li><a href="{% url 'class_work:list' %}" class="dropdown-item">
+                Классы
+              </a></li>
+              <li><a class="dropdown-item" href="{% url 'users:logout' %}">Выйти</a></li>
+            </ul>
+          </div>
+        {% else %}
+          <a href="{% url 'users:login' %}" class="btn btn-outline my-auto me-2">
+            Войти
+          </a>
+        {% endif %}
+      {% endif %}
+    </nav>
+  </div>
+</header>
