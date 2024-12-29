@@ -1,3 +1,5 @@
+[![Django Tests Status](https://github.com/username/repository/actions/workflows/django-tests.yml/badge.svg)](https://github.com/username/repository/actions/workflows/django-tests.yml)
+
 # 🚀 Smart Class: Система управления умным классом
 
 Добро пожаловать в **Smart Class** — современное приложение для управления классами и компьютерами. Этот проект создан для упрощения администрирования и мониторинга.
@@ -33,8 +35,8 @@
 ---
 
 ## 🔗 Ссылки
-- **Репозиторий проекта:** [GitHub](https://github.com/124476/SmartClass)
-- **Сайт:** [Smart Class](SchoolDigital.pythonanywhere.com/)
+- **Репозиторий проекта:** [GitHub](https://github.com/124476/Smart_Class)
+- **Сайт:** [Smart Class](https://SchoolDigital.pythonanywhere.com/)
 
 > **Примечание:** Инструкцию по запуску проекта смотрите в файле [setup.md](setup.md).
 
