@@ -36,7 +36,7 @@
 - **Репозиторий проекта:** [GitHub](https://github.com/124476/SmartClass)
 - **Сайт:** [Smart Class](SchoolDigital.pythonanywhere.com/)
 
-> **Примечание:** Инструкцию по запуску проекта смотрите в файле [SETUP.md](SETUP.md).
+> **Примечание:** Инструкцию по запуску проекта смотрите в файле [setup.md](setup.md).
 
 ---
 
