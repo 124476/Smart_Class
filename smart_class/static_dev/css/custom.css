@@ -1,0 +1,170 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body[data-bs-theme="light"] {
+  background-color: #e1e5e4;
+  color: #000;
+}
+
+body[data-bs-theme="light"] footer {
+  background-color: #d8dee2;
+  color: #000;
+}
+
+body[data-bs-theme="dark"] {
+  background-color: #3c3c3c;
+  color: #ffffff;
+}
+
+body[data-bs-theme="dark"] footer {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+body[data-bs-theme="light"] header {
+  background-color: #d8dee2;
+  color: #000;
+}
+
+body[data-bs-theme="dark"] header {
+  background-color: #222222;
+  color: #fff;
+}
+
+body[data-bs-theme="light"] header a {
+  color: #000;
+}
+
+body[data-bs-theme="dark"] header a {
+  color: #fff;
+}
+
+body[data-bs-theme="light"] header .btn.dropdown-toggle {
+  color: #4f4f4f;
+}
+
+body[data-bs-theme="dark"] header .btn.dropdown-toggle {
+  color: #fff;
+}
+
+body[data-bs-theme="dark"] header a:hover,
+header a.active  {
+  background-color: #555;
+}
+
+body[data-bs-theme="light"] header a:hover,
+header a.active  {
+  background-color: #9b9f9f;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header .btn.dropdown-toggle {
+  color: #686868;
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s;
+}
+
+header .nav-tabs .nav-link {
+  color: #fff;
+}
+
+header .dropdown-menu {
+  background-color: #444;
+}
+
+header .dropdown-menu .dropdown-item {
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+header .dropdown-menu .dropdown-item:hover {
+  background-color: #555;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+footer span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+footer b {
+  font-size: 14px;
+  color: #fff;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-header {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card .btn {
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+}
+
+.card .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.card .btn-primary:hover {
+  background-color: #0a58ca;
+}
+
+.card .btn-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.card .btn-light:hover {
+  background-color: #e2e6ea;
+}
+
+.text-center {
+  margin-bottom: 15px;
+}

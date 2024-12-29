@@ -10,3 +10,4 @@ Pillow==10.4.0
 python-dotenv==1.0.0
 requests==2.32.3
 sorl-thumbnail==12.9.0
+setuptools==75.6.0

@@ -1,5 +1,6 @@
 {% load static %}
 {% load active_link_tags %}
+{% load i18n %}
 
 <header>
   <div class="container d-flex justify-content-between align-items-center py-3">
@@ -7,6 +8,11 @@
       <img src="{% static 'img/logo.svg' %}" alt="Logo" height="60">
       <span class="ms-2 fw-bold">Умный класс</span>
     </a>
+    <nav class="my-auto nav-item dropdown">
+      <a href="#">{% trans "Kanhub" %}</a>
+      <a href="#">{% trans "Опросник" %}</a>
+      <a href="{% url 'homepage:games' %}" class="{% if view_name == 'homepage:games' %}active{% endif %}">{% trans "Игры" %}</a>
+    </nav>
     <nav class="d-flex">
       <nav class="my-auto nav-item dropdown">
         <button class="btn border-0 dropdown-toggle d-flex align-items-center" id="theme-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">

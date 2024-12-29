@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load active_link_tags %}
+{% load i18n %}
+
+{% block title %}{% trans "Игры" %}{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+  <div class="row g-4">
+    <div class="col-12">
+      <div class="card h-100 shadow-sm">
+        <img src="/static/images/game1.jpg" class="card-img-top" alt="{% trans 'Игра 1' %}">
+        <div class="card-body">
+          <h5 class="card-title">{% trans "Игра 1" %}</h5>
+          <p class="card-text">{% trans "Описание первой игры. Короткое, но информативное." %}</p>
+          <a href="{% url 'homepage:tatarlango' %}" class="btn btn-primary">{% trans "Подробнее" %}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card h-100 shadow-sm">
+        <img src="/static/images/game2.jpg" class="card-img-top" alt="{% trans 'Игра 2' %}">
+        <div class="card-body">
+          <h5 class="card-title">{% trans "Игра 2" %}</h5>
+          <p class="card-text">{% trans "Описание второй игры. Кратко о главном." %}</p>
+          <a href="{% url 'homepage:entangled_tale' %}" class="btn btn-primary">{% trans "Подробнее" %}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card h-100 shadow-sm">
+        <img src="/static/images/game3.jpg" class="card-img-top" alt="{% trans 'Игра 3' %}">
+        <div class="card-body">
+          <h5 class="card-title">{% trans "Игра 3" %}</h5>
+          <p class="card-text">{% trans "Описание третьей игры. Уникальные особенности и возможности." %}</p>
+          <a href="/game3/" class="btn btn-primary">{% trans "Подробнее" %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
