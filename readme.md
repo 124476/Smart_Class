@@ -1,4 +1,4 @@
-[![Django Tests Status](https://github.com/124476/Smart_Class/actions/workflows/django-tests.yml/badge.svg)](https://github.com/124476/Smart_Class/actions/workflows/django-tests.yml)
+[![Django Tests Status](https://github.com/12447698/Smart_Class/actions/workflows/django-tests.yml/badge.svg)](https://github.com/12447698/Smart_Class/actions/workflows/django-tests.yml/badge.svg)
 
 # 🚀 Smart Class: Система управления умным классом
 
