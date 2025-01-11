@@ -1,0 +1,620 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-11 23:52+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\apps\homepage\apps.py:10
+msgid "homepage"
+msgstr "homepage"
+
+#: .\apps\users\apps.py:10
+msgid "users"
+msgstr "users"
+
+#: .\apps\users\models.py:21
+msgid "avatar"
+msgstr "avatar"
+
+#: .\apps\users\views.py:38
+msgid "username_is_already_taken"
+msgstr "Username is already taken"
+
+#: .\smart_class\settings.py:132
+msgid "English"
+msgstr "English"
+
+#: .\smart_class\settings.py:133
+msgid "Russian"
+msgstr "Russian"
+
+#: .\templates\class_work\computer_confirm_delete.html:4
+#: .\templates\class_work\work_confirm_delete.html:4
+#: .\templates\includes\header.html:9
+msgid "Умный класс"
+msgstr "Smart Class"
+
+#: .\templates\class_work\computer_confirm_delete.html:11
+msgid "Удалить компьютер?"
+msgstr "Delete computer?"
+
+#: .\templates\class_work\computer_confirm_delete.html:13
+msgid "Вы уверены, что хотите удалить компьютер"
+msgstr "Are you sure you want to delete the computer?"
+
+#: .\templates\class_work\computer_confirm_delete.html:17
+#: .\templates\class_work\work_confirm_delete.html:19
+#: .\templates\class_work\work_list.html:45
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\templates\class_work\computer_confirm_delete.html:19
+#: .\templates\class_work\computer_form.html:26
+#: .\templates\class_work\work_confirm_delete.html:21
+#: .\templates\class_work\work_form.html:19
+msgid "Отмена"
+msgstr "Cancel"
+
+#: .\templates\class_work\computer_form.html:13
+msgid "Редактировать компьютер"
+msgstr "Edit computer"
+
+#: .\templates\class_work\computer_form.html:15
+msgid "Создать компьютер"
+msgstr "Create a computer"
+
+#: .\templates\class_work\computer_form.html:29
+#: .\templates\class_work\work_form.html:20
+msgid "Сохранить"
+msgstr "Save"
+
+#: .\templates\class_work\instructions.html:4
+#: .\templates\class_work\work_list.html:78
+msgid "Инструкция"
+msgstr "Instruction"
+
+#: .\templates\class_work\instructions.html:10
+msgid "Инструкция по управлению ПК"
+msgstr "PC Management Instructions"
+
+#: .\templates\class_work\instructions.html:11
+msgid "Ознакомьтесь с подробным описанием работы программы"
+msgstr "Read the detailed description of how the program works"
+
+#: .\templates\class_work\instructions.html:16
+msgid "Функционал программы"
+msgstr "Functionality of the program"
+
+#: .\templates\class_work\instructions.html:19
+msgid "Поле для ввода UUID компьютера"
+msgstr "Computer UUID input field"
+
+#: .\templates\class_work\instructions.html:20
+msgid ""
+"Используется для задания или изменения уникального идентификатора компьютера."
+msgstr ""
+"Used to set or change the unique identifier of a computer."
+
+#: .\templates\class_work\instructions.html:23
+msgid "Кнопка 'Сохранить'"
+msgstr "'Сохранить' button"
+
+#: .\templates\class_work\instructions.html:24
+msgid "Сохраняет введённый UUID."
+msgstr "Saves the entered UUID."
+
+#: .\templates\class_work\instructions.html:27
+msgid "Кнопка 'Добавить в автозагрузку'"
+msgstr "'Добавить в автозагрузку' button"
+
+#: .\templates\class_work\instructions.html:28
+msgid "Позволяет включить/отключить автозапуск программы."
+msgstr "Allows you to enable/disable program autostart."
+
+#: .\templates\class_work\instructions.html:31
+msgid "Фоновый режим"
+msgstr "Background mode"
+
+#: .\templates\class_work\instructions.html:32
+msgid ""
+"Программа может работать в фоне, обеспечивая постоянный мониторинг "
+"устройства."
+msgstr ""
+"The program can run in the background, providing constant monitoring of the "
+"device."
+
+#: .\templates\class_work\instructions.html:36
+msgid "Как использовать код"
+msgstr "How to use the code"
+
+#: .\templates\class_work\instructions.html:38
+msgid ""
+"На сайте найдите код UUID для каждого компьютера, он отображается рядом с "
+"названием устройства. Введите его в поле 'Ваш код' программы для управления "
+"ПК."
+msgstr ""
+"On the website, find the UUID code for each computer, it is displayed next to the "
+"device name. Enter it in the 'Your code' field of the program for managing "
+"PC."
+
+#: .\templates\class_work\instructions.html:44
+msgid "Вернуться назад"
+msgstr "Go back"
+
+#: .\templates\class_work\work_confirm_delete.html:11
+msgid "Удалить класс?"
+msgstr "Delete class?"
+
+#: .\templates\class_work\work_confirm_delete.html:15
+msgid "Вы уверены, что хотите удалить класс"
+msgstr "Are you sure you want to delete the class?"
+
+#: .\templates\class_work\work_confirm_delete.html:15
+msgid "Это действие необратимо."
+msgstr "This action is irreversible."
+
+#: .\templates\class_work\work_form.html:10
+#: .\templates\class_work\work_list.html:42
+msgid "Редактировать"
+msgstr "Edit"
+
+#: .\templates\class_work\work_form.html:10
+msgid "Создать"
+msgstr "Create"
+
+#: .\templates\class_work\work_form.html:10
+msgid "класс"
+msgstr "class"
+
+#: .\templates\class_work\work_list.html:5
+#: .\templates\class_work\work_list.html:11
+msgid "Умные классы"
+msgstr "Smart Classes"
+
+#: .\templates\class_work\work_list.html:12
+msgid "Управляйте классами и компьютерами с лёгкостью"
+msgstr "Manage classrooms and computers with ease"
+
+#: .\templates\class_work\work_list.html:33
+msgid "Выключить"
+msgstr "Turn off"
+
+#: .\templates\class_work\work_list.html:33
+msgid "Включить"
+msgstr "Turn on"
+
+#: .\templates\class_work\work_list.html:39
+msgid "Выключить сигнал"
+msgstr "Turn off the signal"
+
+#: .\templates\class_work\work_list.html:39
+msgid "Включить сигнал"
+msgstr "Turn on the signal"
+
+#: .\templates\class_work\work_list.html:52
+msgid "Нет компьютеров"
+msgstr "No computers"
+
+#: .\templates\class_work\work_list.html:59
+msgid "Редактировать класс"
+msgstr "Edit class"
+
+#: .\templates\class_work\work_list.html:62
+msgid "Удалить класс"
+msgstr "Delete class"
+
+#: .\templates\class_work\work_list.html:65
+msgid "Добавить компьютер"
+msgstr "Add computer"
+
+#: .\templates\class_work\work_list.html:75
+msgid "Добавить новый класс"
+msgstr "Add new class"
+
+#: .\templates\class_work\work_list.html:81
+msgid "Скачать программу для управления"
+msgstr "Download the program for management"
+
+#: .\templates\homepage\entangled_tale.html:11
+#: .\templates\homepage\tatarlango.html:11
+msgid "Скачать"
+msgstr "Download"
+
+#: .\templates\homepage\games.html:5 .\templates\includes\header.html:15
+msgid "Игры"
+msgstr "Games"
+
+#: .\templates\homepage\games.html:13 .\templates\homepage\games.html:15
+msgid "Entangled Tale"
+msgstr "Entangled Tale"
+
+#: .\templates\homepage\games.html:17
+msgid ""
+"Entangled Tale - это увлекательная игра про человека, который загадочным "
+"образом попал в подземный мир с магами различных наук, которые раньше жили в "
+"мире с людьми, но за годы они начали враждовать и забыли те былые времена "
+"новой ненавистью."
+msgstr ""
+"Entangled Tale is a fascinating game about a man who mysteriously "
+"got into the underworld with magicians of various sciences, who used to live in "
+"peace with people, but over the years they began to feud and forgot those old times with "
+"new hatred."
+
+#: .\templates\homepage\games.html:19 .\templates\homepage\games.html:30
+msgid "Подробнее"
+msgstr "Read more"
+
+#: .\templates\homepage\games.html:25 .\templates\homepage\games.html:27
+msgid "Tatarlango"
+msgstr "Tatarlango"
+
+#: .\templates\homepage\games.html:29
+msgid ""
+"Tatarlango - это увлекательная игра про изучение татарского путём различных "
+"вопросов в виде викторины. Но в ней так же можно прокачиваться и "
+"развиваться. Главная же цель этой игры - полностью собрать башню сююмбике, "
+"достопримечательность казанского кремля."
+msgstr ""
+"Tatarlango is a fascinating game about learning Tatar through various "
+"questions in the form of a quiz. But in it you can also level up and "
+"develop. The main goal of this game is to completely assemble the Syuyumbike tower, "
+"a landmark of the Kazan Kremlin."
+
+#: .\templates\homepage\games.html:36 .\templates\homepage\games.html:38
+msgid "Mahjong Chemistry"
+msgstr "Mahjong Chemistry"
+
+#: .\templates\homepage\games.html:39
+msgid ""
+"Mahjong Chemistry — это уникальная версия классической игры маджонг, "
+"объединённая с химией. Собирайте пары плиток, представляющих химические "
+"элементы и их свойства, чтобы очищать игровое поле. Скачивать ничего не "
+"надо, просто перейдите по ссылке и играйте прямо в браузере. <b>Нужно "
+"подключение к интернету!</b>"
+msgstr ""
+"Mahjong Chemistry is a unique version of the classic game of mahjong, "
+"combined with chemistry. Collect pairs of tiles representing chemical "
+"elements and their properties to clear the board. No need to download anything, just follow the link and play right in your browser. <b>An internet connection is required!</b>"
+
+#: .\templates\homepage\games.html:40
+msgid "Играть"
+msgstr "Play"
+
+#: .\templates\homepage\main.html:5
+msgid "Добро пожаловать в SmartClass"
+msgstr "Welcome to Smart Class"
+
+#: .\templates\homepage\main.html:12
+msgid "Добро пожаловать в"
+msgstr "Welcome to"
+
+#: .\templates\homepage\main.html:13
+msgid "Инновационный инструмент для управления компьютерными классами."
+msgstr "Innovative tool for managing computer classes."
+
+#: .\templates\homepage\main.html:21
+msgid "Управление классами"
+msgstr "Class management"
+
+#: .\templates\homepage\main.html:22
+msgid ""
+"Удобный интерфейс для просмотра списка классов и контроля состояния "
+"компьютеров."
+msgstr ""
+"A convenient interface for viewing a list of classes and monitoring the status of "
+"computers."
+
+#: .\templates\homepage\main.html:28
+msgid "Контроль компьютеров"
+msgstr "Computer control"
+
+#: .\templates\homepage\main.html:29
+msgid "Выключение компьютеров и подача сигналов в реальном времени."
+msgstr "Shutting down computers and sending signals in real time."
+
+#: .\templates\homepage\main.html:35
+msgid "Редактирование данных"
+msgstr "Editing data"
+
+#: .\templates\homepage\main.html:36
+msgid ""
+"Обновление информации о классах и компьютерах, добавление и удаление "
+"элементов."
+msgstr ""
+"Updating information about classes and computers, adding and deleting "
+"elements."
+
+#: .\templates\homepage\main.html:44
+msgid "Начать работу"
+msgstr "Get started"
+
+#: .\templates\homepage\main.html:51
+msgid "Скачайте приложение для управления компьютерами:"
+msgstr "Download the application for managing computers:"
+
+#: .\templates\homepage\main.html:53
+msgid "Скачать SmartClass.exe"
+msgstr "Download SmartClass.exe"
+
+#: .\templates\includes\footer.html:6
+msgid "О нас"
+msgstr "About Us"
+
+#: .\templates\includes\footer.html:7
+msgid ""
+"SmartClass — это инновационная платформа для управления компьютерными "
+"классами, упрощающая мониторинг и контроль оборудования в реальном времени."
+msgstr ""
+"SmartClass is an innovative platform for managing computer "
+"classrooms, simplifying the monitoring and control of equipment in real time."
+
+#: .\templates\includes\footer.html:12
+msgid "SmartClass. Все права защищены."
+msgstr "SmartClass. All rights reserved."
+
+#: .\templates\includes\header.html:12
+msgid "Главная"
+msgstr "Home"
+
+#: .\templates\includes\header.html:13
+msgid "Kanhub"
+msgstr "Kanhub"
+
+#: .\templates\includes\header.html:14
+msgid "Askly"
+msgstr "Askly"
+
+#: .\templates\includes\header.html:42
+msgid "Тема"
+msgstr "Theme"
+
+#: .\templates\includes\header.html:46
+msgid "Светлая"
+msgstr "Light"
+
+#: .\templates\includes\header.html:49
+msgid "Темная"
+msgstr "Dark"
+
+#: .\templates\includes\header.html:61
+msgid "Мой профиль"
+msgstr "My profile"
+
+#: .\templates\includes\header.html:65
+msgid "Админ"
+msgstr "Admin panel"
+
+#: .\templates\includes\header.html:69
+msgid "Классы"
+msgstr "Classes"
+
+#: .\templates\includes\header.html:71
+msgid "Выйти"
+msgstr "Quit"
+
+#: .\templates\includes\header.html:76
+msgid "Войти"
+msgstr "Login"
+
+#: .\templates\includes\user_form.html:50
+msgid "Signin via Yandex"
+msgstr "Signin via Yandex"
+
+#: .\templates\includes\user_form.html:51
+msgid "dont_have_account_yet"
+msgstr "Dont have account yet?"
+
+#: .\templates\includes\user_form.html:51
+msgid "create_it"
+msgstr "Create it"
+
+#: .\templates\includes\user_form.html:52
+msgid "forgot_password"
+msgstr "Forgot password"
+
+#: .\templates\socialaccount\signup.html:6
+msgid "Signup with Yandex"
+msgstr "Signup with Yandex"
+
+#: .\templates\socialaccount\signup.html:17
+#: .\templates\socialaccount\signup.html:35
+msgid "Sign Up"
+msgstr "Sign Up"
+
+#: .\templates\socialaccount\signup.html:20
+#, python-format
+msgid ""
+"\n"
+"              You are about to use your %(provider_name)s account to login "
+"to %(site_name)s.\n"
+"              As a final step, please complete the following form:\n"
+"            "
+msgstr ""
+"\n"
+"              You are about to use your %(provider_name)s account to login "
+"to %(site_name)s.\n"
+"              As a final step, please complete the following form:\n"
+"            "
+
+#: .\templates\users\confirm_email.html:5
+#: .\templates\users\confirm_email.html:11
+#: .\templates\users\confirm_email_from_sent.html:7
+#: .\templates\users\confirm_email_from_sent.html:13
+msgid "email_confirmation"
+msgstr "Email confirmation"
+
+#: .\templates\users\confirm_email.html:12
+msgid "email_confirmation_description"
+msgstr "Email confirmation description"
+
+#: .\templates\users\confirm_email_from_sent.html:18
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an email "
+"address for user %(user_display)s."
+msgstr ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an email "
+"address for user %(user_display)s."
+
+#: .\templates\users\confirm_email_from_sent.html:26
+msgid "Confirm"
+msgstr "Confirm"
+
+#: .\templates\users\confirm_email_from_sent.html:33
+#, python-format
+msgid ""
+"Unable to confirm %(email)s because it is already confirmed by a different "
+"account."
+msgstr ""
+"Unable to confirm %(email)s because it is already confirmed by a different "
+"account."
+
+#: .\templates\users\confirm_email_from_sent.html:39
+#, python-format
+msgid ""
+"This email confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new email confirmation request</a>."
+msgstr ""
+"This email confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new email confirmation request</a>."
+
+#: .\templates\users\email_change.html:8
+msgid "email_change"
+msgstr "Email change"
+
+#: .\templates\users\email_change.html:17
+#: .\templates\users\email_change.html:20
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\users\email_change.html:28
+msgid "Re-send Verification"
+msgstr "Re-send Verification"
+
+#: .\templates\users\email_change.html:29
+msgid "Cancel"
+msgstr "Cancel"
+
+#: .\templates\users\email_change.html:31
+msgid "change_email"
+msgstr "Change email"
+
+#: .\templates\users\information.html:3
+msgid "Users"
+msgstr "Users"
+
+#: .\templates\users\information.html:6
+msgid "All is OK"
+msgstr "All is OK"
+
+#: .\templates\users\login.html:5
+msgid "authorization"
+msgstr "Authorization"
+
+#: .\templates\users\login.html:13
+msgid "log_in_to_smart_class"
+msgstr "Log into smart class"
+
+#: .\templates\users\login.html:14
+msgid "sign_in"
+msgstr "Sign in"
+
+#: .\templates\users\logout.html:4
+msgid "logout"
+msgstr "Logout"
+
+#: .\templates\users\password_change.html:5
+#: .\templates\users\password_change.html:12
+msgid "password_change"
+msgstr "Password change"
+
+#: .\templates\users\password_change.html:13
+msgid "change_password"
+msgstr "Change password"
+
+#: .\templates\users\password_change_done.html:5
+msgid "password_changed"
+msgstr "Password changed"
+
+#: .\templates\users\password_change_done.html:11
+msgid "your_password_be_success_changed"
+msgstr "Your password be success changed"
+
+#: .\templates\users\password_change_done.html:12
+#: .\templates\users\password_reset_complete.html:12
+#: .\templates\users\password_reset_done.html:12
+msgid "to_main"
+msgstr "To main"
+
+#: .\templates\users\password_reset.html:5
+#: .\templates\users\password_reset.html:13
+#: .\templates\users\password_reset_confirm.html:5
+#: .\templates\users\password_reset_confirm.html:13
+#: .\templates\users\password_reset_done.html:5
+msgid "password_recovery"
+msgstr "Password recovery"
+
+#: .\templates\users\password_reset.html:14
+msgid "recover"
+msgstr "Recover"
+
+#: .\templates\users\password_reset_complete.html:5
+msgid "password_recovered"
+msgstr "Password recovered"
+
+#: .\templates\users\password_reset_complete.html:11
+msgid "password_reset_completed_success"
+msgstr "Password reset completed success"
+
+#: .\templates\users\password_reset_confirm.html:14
+msgid "reset"
+msgstr "Reset"
+
+#: .\templates\users\password_reset_done.html:11
+msgid "email_instructions_for_password_recove_sent"
+msgstr "Confirm password reset via email"
+
+#: .\templates\users\profile.html:6 .\templates\users\profile.html:18
+msgid "My Profile"
+msgstr "My Profile"
+
+#: .\templates\users\profile.html:55
+msgid "Delete Avatar"
+msgstr "Delete Avatar"
+
+#: .\templates\users\profile.html:82
+msgid "Save"
+msgstr "Save"
+
+#: .\templates\users\profile.html:85
+msgid "Change Email"
+msgstr "Change Email"
+
+#: .\templates\users\profile.html:88
+msgid "Change Password"
+msgstr "Change Password"
+
+#: .\templates\users\signup.html:5
+msgid "registration"
+msgstr "Registration"
+
+#: .\templates\users\signup.html:13
+msgid "greeting"
+msgstr "Registration"
+
+#: .\templates\users\signup.html:14
+msgid "register"
+msgstr "Register"

@@ -1,21 +1,33 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
-{% block title %}Умный класс{% endblock %}
+{% block title %}{{ object|default:"Создать"|add:" компьютер" }}{% endblock %}
 
 {% block content %}
 
 <div class="container mt-4">
-  <div class="card">
-    <div class="card-header">
-      <h2 class="mb-0">{% if object %}Редактировать{% else %}Создать{% endif %} компьютер</h2>
+  <div class="card shadow-lg border-0">
+    <div class="card-header bg-primary text-white">
+      <h2 class="mb-0">
+        {% if object %}
+          <i class="bi bi-pencil-square me-2"></i>{% trans "Редактировать компьютер" %}
+        {% else %}
+          <i class="bi bi-plus-circle me-2"></i>{% trans "Создать компьютер" %}
+        {% endif %}
+      </h2>
     </div>
     <div class="card-body">
       <form method="post" class="needs-validation" novalidate>
         {% csrf_token %}
         {{ form.as_p }}
-        <div class="d-flex justify-content-between mt-4">
-          <a href="{% url 'class_work:list' %}" class="btn btn-secondary">Отмена</a>
-          <button type="submit" class="btn btn-success">Сохранить</button>
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <a href="{% url 'class_work:list' %}" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-2"></i>{% trans "Отмена" %}
+          </a>
+          <button type="submit" class="btn btn-success">
+            <i class="bi bi-check-circle me-2"></i>{% trans "Сохранить" %}
+          </button>
         </div>
       </form>
     </div>

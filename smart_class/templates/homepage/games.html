@@ -10,31 +10,34 @@
   <div class="row g-4">
     <div class="col-12">
       <div class="card h-100 shadow-sm">
-        <img src="/static/images/game1.jpg" class="card-img-top" alt="{% trans 'Игра 1' %}">
+        <img src="/static/img/game1.jpg" class="card-img-top" alt="{% trans 'Entangled Tale' %}">
         <div class="card-body">
-          <h5 class="card-title">{% trans "Игра 1" %}</h5>
-          <p class="card-text">{% trans "Описание первой игры. Короткое, но информативное." %}</p>
+          <h5 class="card-title">{% trans "Entangled Tale" %}</h5>
+          <p class="card-text">
+            {% trans "Entangled Tale - это увлекательная игра про человека, который загадочным образом попал в подземный мир с магами различных наук, которые раньше жили в мире с людьми, но за годы они начали враждовать и забыли те былые времена новой ненавистью." %}
+          </p>
           <a href="{% url 'homepage:tatarlango' %}" class="btn btn-primary">{% trans "Подробнее" %}</a>
         </div>
       </div>
     </div>
     <div class="col-12">
       <div class="card h-100 shadow-sm">
-        <img src="/static/images/game2.jpg" class="card-img-top" alt="{% trans 'Игра 2' %}">
+        <img src="/static/img/game2.jpg" class="card-img-top" alt="{% trans 'Tatarlango' %}">
         <div class="card-body">
-          <h5 class="card-title">{% trans "Игра 2" %}</h5>
-          <p class="card-text">{% trans "Описание второй игры. Кратко о главном." %}</p>
+          <h5 class="card-title">{% trans "Tatarlango" %}</h5>
+          <p class="card-text">
+            {% trans "Tatarlango - это увлекательная игра про изучение татарского путём различных вопросов в виде викторины. Но в ней так же можно прокачиваться и развиваться. Главная же цель этой игры - полностью собрать башню сююмбике, достопримечательность казанского кремля." %}</p>
           <a href="{% url 'homepage:entangled_tale' %}" class="btn btn-primary">{% trans "Подробнее" %}</a>
         </div>
       </div>
     </div>
     <div class="col-12">
       <div class="card h-100 shadow-sm">
-        <img src="/static/images/game3.jpg" class="card-img-top" alt="{% trans 'Игра 3' %}">
+        <img src="/static/img/game3.jpg" class="card-img-top" alt="{% trans 'Mahjong Chemistry' %}">
         <div class="card-body">
-          <h5 class="card-title">{% trans "Игра 3" %}</h5>
-          <p class="card-text">{% trans "Описание третьей игры. Уникальные особенности и возможности." %}</p>
-          <a href="/game3/" class="btn btn-primary">{% trans "Подробнее" %}</a>
+          <h5 class="card-title">{% trans "Mahjong Chemistry" %}</h5>
+          <p class="card-text">{% trans "Mahjong Chemistry — это уникальная версия классической игры маджонг, объединённая с химией. Собирайте пары плиток, представляющих химические элементы и их свойства, чтобы очищать игровое поле. Скачивать ничего не надо, просто перейдите по ссылке и играйте прямо в браузере. <b>Нужно подключение к интернету!</b>" %}</p>
+          <a href="" class="btn btn-primary">{% trans "Играть" %}</a>
         </div>
       </div>
     </div>

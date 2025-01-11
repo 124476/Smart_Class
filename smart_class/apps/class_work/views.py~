@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.urls import reverse_lazy
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import get_object_or_404, redirect
 from django.views.generic import View, ListView, CreateView, UpdateView, DeleteView
 from .models import Work, Computer
 
@@ -137,10 +137,3 @@ class ComputerControlView(LoginRequiredMixin, View):
 
         computer.save()
         return redirect('class_work:list')
-
-
-class InstructionsView(LoginRequiredMixin, View):
-    template_name = 'class_work/instructions.html'
-
-    def get(self, request):
-        return render(request, self.template_name)

@@ -9,7 +9,7 @@
 <div class="container py-5">
   <div class="row text-center mb-5">
     <div class="col">
-      <h1 class="display-4 fw-bold">{% trans "Добро пожаловать в" %} <span class="text-primary">Smart Class</span></h1>
+      <h1 class="display-4 fw-bold">{% trans "Добро пожаловать в" %} <span class="text-primary">{% trans "Smart Class" %}</span></h1>
       <p class="lead text-muted">{% trans "Инновационный инструмент для управления компьютерными классами." %}</p>
     </div>
   </div>

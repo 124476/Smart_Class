@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SMART_CLASS_DJANGO_SECRET_KEY", default="no_key")
 
 DEBUG = load_bool("SMART_CLASS_DJANGO_DEBUG", True)
-DEFAULT_USER_IS_ACTIVE = load_bool("KANHUB_DJANGO_IS_ACTIVE", DEBUG)
+DEFAULT_USER_IS_ACTIVE = load_bool("SMART_CLASS_DJANGO_IS_ACTIVE", DEBUG)
 MAX_AUTH_ATTEMPTS = int(
     os.getenv("SMART_CLASS_DJANGO_MAX_AUTH_ATTEMPTS", default=3),
 )
@@ -63,6 +64,7 @@ CKEDITOR_CONFIGS = {
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -125,6 +127,13 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 LANGUAGE_CODE = "ru-ru"
+
+LANGUAGES = [
+    ("en", _("English")),
+    ("ru", _("Russian")),
+]
+
+LOCALE_PATHS = (BASE_DIR / "locale/",)
 
 TIME_ZONE = "UTC"
 

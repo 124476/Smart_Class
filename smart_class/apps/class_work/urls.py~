@@ -12,5 +12,5 @@ urlpatterns = [
     path("computer/<int:pk>/update/", views.ComputerUpdateView.as_view(), name="computer_update"),
     path("computer/<int:pk>/delete/", views.ComputerDeleteView.as_view(), name="computer_delete"),
     path('computer/control/<int:pk>/', views.ComputerControlView.as_view(), name='computer_control'),
-    path("instructions/", views.InstructionsView.as_view(), name="instructions"),
+
 ]
