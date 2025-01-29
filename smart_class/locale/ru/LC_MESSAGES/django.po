@@ -534,7 +534,7 @@ msgstr "Вход в Умный Класс"
 
 #: .\templates\users\login.html:14
 msgid "sign_in"
-msgstr "Регистрация"
+msgstr "Войти"
 
 #: .\templates\users\logout.html:4
 msgid "logout"

@@ -10,8 +10,8 @@
     </a>
     <nav class="my-auto nav-item dropdown">
       <a href="{% url 'homepage:main' %}">{% trans "Главная" %}</a>
-      <a href="#">{% trans "Kanhub" %}</a>
-      <a href="#">{% trans "Askly" %}</a>
+      <a href="https://kanhub.pythonanywhere.com">{% trans "Kanhub" %}</a>
+      <a href="https://asklysmartclass.pythonanywhere.com">{% trans "Askly" %}</a>
       <a href="{% url 'homepage:games' %}" class="{% if view_name == 'homepage:games' %}active{% endif %}">{% trans "Игры" %}</a>
     </nav>
     <nav class="d-flex">
