@@ -24,7 +24,7 @@
             <ul class="list-group list-group-flush">
               {% for computer in work.computers %}
                 <li class="list-group-item">
-                  <div class="text-muted small mb-2"><i class="bi bi-laptop"></i><span>{{ computer.name }}</span> - {{ computer.uuid }}</div>
+                  <div class="text-muted small mb-2"><i class="bi bi-laptop"></i> <span>{{ computer.name }}</span> - {{ computer.uuid }}</div>
                   <div class="d-flex justify-content-between">
                     <button class="btn btn-sm {% if computer.is_active %}btn-warning{% else %}btn-success{% endif %} me-2 toggle-power"
                             data-url="{% url 'class_work:computer_control' computer.pk %}"
@@ -82,5 +82,36 @@
     </a>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButtons = document.querySelectorAll('.toggle-power, .toggle-signal');
+
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // Отключает стандартное поведение
+
+      const url = button.dataset.url;
+      const action = button.dataset.action;
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+        },
+        body: new URLSearchParams({ action: action }) // Передача данных как form-urlencoded
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        location.reload(); // Перезагружаем страницу после успешного запроса
+      })
+      .catch(error => console.error('Ошибка при выполнении запроса:', error));
+    });
+  });
+});
+</script>
+
 
 {% endblock %}

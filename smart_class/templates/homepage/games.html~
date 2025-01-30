@@ -9,7 +9,7 @@
 
 <div class="container mt-4 mb-4">
   <div class="row g-4">
-    <div class="col-4">
+    <div class="col-12">
       <div class="card h-100 shadow-sm">
         <img src="/static/img/entangled_tale.png" class="card-img-top" alt="{% trans 'Entangled Tale' %}">
         <div class="card-body">
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-12">
       <div class="card h-100 shadow-sm">
         <img src="/static/img/tatarlango.png" class="card-img-top" alt="{% trans 'Tatarlango' %}">
         <div class="card-body">
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-12">
       <div class="card h-100 shadow-sm">
         <img src="/static/img/mahjong_chemistry.png" class="card-img-top" alt="{% trans 'Mahjong Chemistry' %}">
         <div class="card-body">
