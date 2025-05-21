@@ -38,6 +38,7 @@
 - **Программа для управления компьтерами** [GitHub](https://github.com/124476/Smart_Class_program)
 - **Сайт-опросник** [GitHub](https://github.com/124476/Askly/)
 - **Сайт по обучению химии** [GitHub](https://github.com/124476/Mahjong_chemistry)
+- **Сайт для управления временем и задачами** [GitHub](https://github.com/124476/Kanhub)
 - **Игра по изучению татарского языка** [GitHub](https://github.com/124476/Tatarlango)
 - **Интерактивная игра Entangled-Tale** [GitHub](https://github.com/124476/Entangled-Tale)
 
