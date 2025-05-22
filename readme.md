@@ -47,7 +47,7 @@
 ## 🔗 Ссылки
 - **Реферат** [GitHub](https://github.com/124476/Smart_Class/blob/master/docs/%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82.pdf)
 - **Репозиторий проекта:** [GitHub](https://github.com/124476/Smart_Class)
-- **Сайт:** [Smart Class](https://SchoolDigital.pythonanywhere.com/)
+- **Сайт:** [Smart Class](https://smartclass.pythonanywhere.com/)
 
 > **Примечание:** Инструкцию по запуску проекта смотрите в файле [setup.md](setup.md).
 
