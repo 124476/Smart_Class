@@ -45,6 +45,7 @@
 ---
 
 ## 🔗 Ссылки
+- **Реферат** [GitHub](https://github.com/124476/https://github.com/124476/Smart_Class/blob/master/docs/Реферат.pdf)
 - **Репозиторий проекта:** [GitHub](https://github.com/124476/Smart_Class)
 - **Сайт:** [Smart Class](https://SchoolDigital.pythonanywhere.com/)
 
